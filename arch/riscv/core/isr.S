@@ -125,6 +125,7 @@ GTEXT(_isr_wrapper)
  * Handler called upon each exception/interrupt/fault
  */
 SECTION_FUNC(exception.entry, _isr_wrapper)
+.balign(0x100)
 
 #ifdef CONFIG_USERSPACE
 	/*
